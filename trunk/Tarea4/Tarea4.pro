@@ -26,7 +26,8 @@ HEADERS += \
     ventana.h \
     visoropengl.h \
     ../visoropengl.h \
-    ../ventana.h
+    ../ventana.h \
+    ../escena.h
 
 SOURCES += \
     ../whittedtracer.cpp \
@@ -50,4 +51,7 @@ SOURCES += \
     ventana.cpp \
     visoropengl.cpp \
     ../visoropengl.cpp \
-    ../ventana.cpp
+    ../ventana.cpp \
+    ../escena.cpp
+
+
