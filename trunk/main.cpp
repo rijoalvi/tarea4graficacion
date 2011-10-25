@@ -25,8 +25,17 @@
 #include <QApplication>
 #include "ventana.h"
 int main(int argc, char *argv[]) {
+    initializeGL();
     QApplication app(argc, argv);
     Ventana ventana;
     ventana.show();
     return app.exec();
 }
+
+void VisorOpenGL::initializeGL() {
+    glClearColor(1.0,1.0,1.0,1.0);
+    glShadeModel(GL_FLAT);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_CULL_FACE);
+}
+
