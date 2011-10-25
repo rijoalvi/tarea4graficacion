@@ -13,14 +13,25 @@
   <property name="windowTitle">
    <string>VentanaPrincipal</string>
   </property>
-  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="PanelDibujo" name="AreaDibujo" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>391</width>
+      <height>341</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
      <width>649</width>
-     <height>27</height>
+     <height>29</height>
     </rect>
    </property>
   </widget>
@@ -35,6 +46,14 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PanelDibujo</class>
+   <extends>QWidget</extends>
+   <header location="global">paneldibujo.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
