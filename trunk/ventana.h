@@ -1,10 +1,12 @@
 #ifndef VENTANA_H
 #define VENTANA_H
-
-class ventana
-{
+#include <QWidget>
+#include "visoropengl.h"
+class Ventana : public QWidget {
+    Q_OBJECT
 public:
-    ventana();
+    Ventana();
+private:
+    VisorOpenGL *visorOpenGL;
 };
-
-#endif // VENTANA_H
+#endif
